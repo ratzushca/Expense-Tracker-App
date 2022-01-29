@@ -13,45 +13,60 @@
     <h1> Simple Expense Manager Project</h1>
     <h2> Add a new item:</h2>
     </div>
+
+
+    <div class = "block_container">
+
+        <div class="type">
+        <span>Type:</span> 
+        <select name="cc">
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+            <option value="Crypto">Crypto</option>
+            <option value="Other">Other</option>
+            </select>
+        </div>
     
-    <div Id = "block_container">
-
-        <div id="type">
-        <span>Type:</span> 
-        <select name="cc">
-            <option value="Cash">Cash</option>
-            <option value="Card">Card</option>
-            <option value="Crypto">Crypto</option>
-            <option value="Other">Other</option>
-            </select>
-        </div>
 
 
-        <div id="name">
-            <span>Name:</span> <input type="text" name="item-name" placeholder="What did you spend on?">
+        <div class = "name">
+            <span>Name:</span> 
+            <input type="text" name="item-name" placeholder="What did you spend on?">
             </div>
             
     </div>
 
-    <div Id = "block_container">
 
-        <div id="type">
-        <span>Type:</span> 
-        <select name="cc">
-            <option value="Cash">Cash</option>
-            <option value="Card">Card</option>
-            <option value="Crypto">Crypto</option>
-            <option value="Other">Other</option>
-            </select>
+
+
+    <div class = "block_container">
+
+        <div class="type">
+        <span>Date:</span> 
+        <input type = "date" >   
         </div>
 
 
-        <div id="name">
-            <span>Name:</span> <input type="text" name="item-name" placeholder="What did you spend on?">
-            </div>
-            
+        <div class="name">
+            <span>Amount:</span> 
+            <input type="number" name="amount" placeholder="What was the damage?">
+       </div>
+
     </div>
 
+</div>
+    <div > 
+        <button id="newexpense">Add a new expense</button>
+    </div>  
+
+    <table>
+        <tr>
+          <th id="type">Type</th>
+          <th id="name">Name</th>
+          <th id="date">Date</th>
+          <th id="amount">Amount</th>
+        </tr>
+    </table>
 
     
 
