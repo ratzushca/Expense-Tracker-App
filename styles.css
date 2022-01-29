@@ -78,15 +78,15 @@ tr:nth-child(even) {
     background-color: #ecdede;
   }
 
-#type{
+#date{
     width: 50px;
 }
-#name{
+#description{
     width: 100px;
 }
-#date{
+#amount{
     width: 200px;
 }
-#amount{
+#location{
     width: 150px;
 }
