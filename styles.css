@@ -52,7 +52,7 @@ input, select{
 }
 
 span{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 200;
     display: inline-block;
     width: 80px;
@@ -78,7 +78,7 @@ table{
 
 td, th {
     border: 1px solid #bb4545;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 tr:nth-child(even) {
@@ -86,14 +86,17 @@ tr:nth-child(even) {
   }
 
 #date{
-    width: 50px;
+    width: 100px;
+
 }
 #description{
-    width: 100px;
+    width: 200px;
 }
 #amount{
-    width: 200px;
+    width: 100px;
+    
 }
 #location{
     width: 150px;
 }
+

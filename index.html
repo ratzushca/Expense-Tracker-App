@@ -14,12 +14,21 @@
     <h2> Add a new item:</h2>
     </div>
 
+    <div class = "block_container">
+
+        <div class="location">
+            <span>Location:</span> 
+            <input type="text" name="location" Id = "loc" placeholder="Where the transaction was made?">
+       </div>
+
+    </div>
+
 
     <div class = "block_container">
 
         <div class="type">
         <span>Type:</span> 
-        <select name="cc">
+        <select name="cc" Id="types">
             <option value="Cash">Cash</option>
             <option value="Card">Card</option>
             <option value="Crypto">Crypto</option>
@@ -31,7 +40,7 @@
 
         <div class = "name">
             <span>Name:</span> 
-            <input type="text" name="item-name" placeholder="What did you spend on?">
+            <input type="text" id= "descriptionItem" name="item-name" placeholder="What did you spend on?">
             </div>
             
     </div>
@@ -43,29 +52,36 @@
 
         <div class="type">
         <span>Date:</span> 
-        <input type = "date" >   
+        <input type = "date" Id = "dates">   
         </div>
 
 
         <div class="name">
             <span>Amount:</span> 
-            <input type="number" name="amount" placeholder="What was the damage?">
+            <input type="number" name="amount" Id = "howmuch" placeholder="What was the damage?">
        </div>
 
     </div>
+
 
 </div>
     <div > 
         <button id="newexpense">Add a new expense</button>
     </div>  
 
-    <table>
+
+
+
+    <table id="table">
         <tr>
+          <th id="types">Type</th>
           <th id="date">Date</th>
           <th id="description">Description</th>
           <th id="amount">Amount</th>
           <th id="location">Location</th>
         </tr>
+        <!-- <td></td> -->
+       
     </table>
 
     
