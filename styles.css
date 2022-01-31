@@ -51,7 +51,7 @@ input, select{
     
 }
 
-span{
+.m1{
     font-size: 1.2em;
     font-weight: 200;
     display: inline-block;
@@ -81,10 +81,20 @@ td, th {
     text-align: center;
     padding: 8px;
 }
+
+td .m1{
+    border: 1px solid #bb4545;
+    text-align: center;
+    padding: 8px;
+}
+
 tr:nth-child(even) {
     background-color: #ecdede;
   }
 
+tr:nth-child(odd){
+  background-color:burlywood;
+}
 #date{
     width: 100px;
 
@@ -93,10 +103,13 @@ tr:nth-child(even) {
     width: 200px;
 }
 #amount{
-    width: 100px;
+    width: 150px;
     
 }
 #location{
     width: 150px;
 }
 
+td#howmuch::before {
+    content: '$';
+}
