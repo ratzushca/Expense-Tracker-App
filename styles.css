@@ -32,6 +32,7 @@ body{
 .block_container {
     display: flex;
     justify-content: center;
+    height: 80px;
     
 }
 
@@ -58,7 +59,7 @@ input, select{
     width: 80px;
 }
 
-button{
+.add{
     color: whitesmoke;
     display: block;
     max-width: 300px;
@@ -67,17 +68,20 @@ button{
     width: 10em;
     height: 4.5em;
     border-radius: 5px;
+    margin-bottom: 25px;
   
 }
 table{
     display: flex;
     justify-content: center;
     color: rgb(184, 14, 14);
-   
+         
 }
 
+
+
 td, th {
-    border: 1px solid #bb4545;
+    border: 1px solid #0c020c;
     text-align: center;
     padding: 8px;
 }
@@ -109,7 +113,14 @@ tr:nth-child(odd){
 #location{
     width: 150px;
 }
-
-td#howmuch::before {
-    content: '$';
+table tr button{
+    color: black;
+    background-color:red;
+    font-weight:bolder ;
+    border-radius: 2px;
+    float: right;
+    width: 2em;
+    height: 3em;
 }
+
+
