@@ -14,13 +14,13 @@
     <h2> Add a new item:</h2>
     </div>
 
-    <form Id="form">
+    <form Id="form" name="myForm" action="/action_page.php" onsubmit="return IsEmpty()" method="post" >
 
     <div class = "block_container">
 
         <div class="location">
             <span class="m1">Location:</span> 
-            <input type="text" name="location" Id = "loc" placeholder="Tranzaction location?">
+            <input type="text" name="location" Id = "loc" placeholder="Tranzaction location?" required>
        </div>
 
     </div>
@@ -54,7 +54,7 @@
 
         <div class="type">
         <span class="m1">Date:</span> 
-        <input type = "date" Id = "dates">   
+        <input type = "date" Id = "dates"name = "calendar">   
         </div>
 
 
@@ -68,7 +68,7 @@
 
 </div>
     <div > 
-        <button id="newexpense" class ="add">Add a new expense</button>
+        <button id="newexpense" class ="add" type="submit">Add a new expense</button>
     </div>  
 </form>
 
