@@ -1,26 +1,14 @@
 
 
-// const validate = document.getElementById("newexpense");
-// validate.addEventListener('click',IsEmpty);
-
-const addBtn = document.getElementById("newexpense");
-addBtn.addEventListener('click',addItem);
-
-// function IsEmpty() {
-    
-//     let x = document.forms["myForm"]["location"].value;
-//     if (x === "" || x === null) {
-//       alert("Name must be filled out");
-//       return false;
-//     }
-//   }
-   
-
-
-
-function addItem(e){
+document.getElementById("newexpense").addEventListener('click',(e) => {
     e.preventDefault();
+    addTableRow();
+    document.getElementById('form').reset();
+});
 
+
+function addTableRow(){
+   
     let vloc = document.forms["myForm"]["location"].value;
     if (vloc === "" || vloc === null) {
       alert("Location field must be filled out");
@@ -47,14 +35,13 @@ function addItem(e){
 
     const table = document.getElementById("table");
     const row = document.createElement('tr');
-    console.log(row);
-
-
+   
     const tdtype= document.createElement("td")
     const tddata= document.createElement("td")
     const tddescription= document.createElement("td")
     const tdamount= document.createElement("td")
     const tdlocation= document.createElement("td")
+
 
     tdtype.innerHTML=document.getElementById("types").value;
     tddata.innerHTML=document.getElementById("dates").value;
@@ -72,34 +59,18 @@ function addItem(e){
     row.appendChild(tdamount);
     row.appendChild(tdlocation);
 
-// delete button
+    
+    // implement delete button
+    const delbutton = document.createElement('button');
+    delbutton.innerText = "X";
+    row.appendChild(delbutton);
 
-    const x = document.createElement('button');
-    x.textContent = "X";
-    const rows = document.getElementById("table");
-    // row.appendChild(document.createTextNode(rows.value));
-    row.appendChild(x);
-    table.appendChild(row);
+    // delete a row
+    delbutton.onclick = (e) =>{
+        e.target.parentElement.remove();
+    }
 
     table.children[0].appendChild(row);
 
-    document.getElementById('form').reset();
-
-
 };
-
-table.onclick = removetr;
-
-function removetr(e){
-    e.preventDefault();
-    const tgt = e.target;
-    const elements = document.getElementById('table');
-
-    if (tgt.tagName === "BUTTON") {
-        
-        tgt.closest('tr').remove();
-      }
-
-    return false;
-}
 
