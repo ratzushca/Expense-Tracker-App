@@ -1,8 +1,6 @@
 # Expense-Tracker-App
 
-Basic Expense Tracker application created via HTML, JavaScript, and CSS>
-
-ToDo app was built using vinilla Javascript, HTML and CSS.
+Basic Expense Tracker application created via HTML, JavaScript, and CSS.
 
 Track some expenses here: https://ratzushca.github.io/Expense-Tracker-App/index.html
 
