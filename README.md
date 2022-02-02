@@ -3,6 +3,7 @@
 Basic Expense Tracker application created via HTML, JavaScript, and CSS.
 
 INSTRUCTIONS
+
 The application allows a user to input a spending in a table, tracking some other related atributes as well. The user will be able to add a record only when all input boxes questions will be answered. The also allows to remove a record if neccessary.
 
 Track some expenses here: https://ratzushca.github.io/Expense-Tracker-App/
