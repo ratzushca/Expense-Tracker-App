@@ -2,7 +2,7 @@
 
 Basic Expense Tracker application created via HTML, JavaScript, and CSS.
 
-Track some expenses here: https://ratzushca.github.io/Expense-Tracker-App/index.html
+Track some expenses here: https://ratzushca.github.io/Expense-Tracker-App/
 
 UI
 <img width="869" alt="Screen Shot 2022-02-01 at 7 22 13 PM" src="https://user-images.githubusercontent.com/93014061/152088308-6316e851-b54c-4913-aaea-a068fbcf2d8f.png">
