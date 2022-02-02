@@ -3,9 +3,8 @@
 document.getElementById("newexpense").addEventListener('click',(e) => {
     e.preventDefault();
     addTableRow();
-    document.getElementById('form').reset();
+    
 });
-
 
 function addTableRow(){
    
@@ -71,6 +70,8 @@ function addTableRow(){
     }
 
     table.children[0].appendChild(row);
+
+    document.getElementById('form').reset();
 
 };
 
